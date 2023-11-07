@@ -4,7 +4,7 @@ type V any
 
 // Queue is FIFO (first-in-first-out) queue
 type Queue interface {
-	Enqueue(V)
+	Enqueue(V) bool
 	Dequeue() V
 }
 
